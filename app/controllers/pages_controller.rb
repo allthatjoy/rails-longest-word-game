@@ -30,9 +30,11 @@ class PagesController < ApplicationController
     @english_test = word['found']
 
     if @player_word == @english_test
-       @english_test
+      return @english_test
       else @english_test
     end
 
   end
 end
+
+# if @player_word == @english_test return true
